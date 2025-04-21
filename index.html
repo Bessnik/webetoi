@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Webetoi — Coming Soon</title>
+  <style>
+    body {
+      background-color: #f5f3ef;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+      color: #2c2c2c;
+    }
+    img {
+      max-width: 450px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <img src="logo.png" alt="Webetoi Logo">
+  <h2>Webetoi arrive bientôt<span id="dots">.</span></h2>
+
+  <script>
+    const dots = document.getElementById("dots");
+    let dotCount = 1;
+
+    setInterval(() => {
+      dotCount = (dotCount % 3) + 1;
+      dots.textContent = ".".repeat(dotCount);
+    }, 1200);
+  </script>
+</body>
+</html>
