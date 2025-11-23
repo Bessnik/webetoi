@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Références CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- SEO de base -->
+    <title>Nous contacter - Agence de développement web à Colmar - WEBeTOI</title>
+    <meta name="description" content="WEBeTOI est une agence de développement web basée à Colmar : création de sites vitrine, e-commerce, UX/UI, applications mobiles et plateformes vidéos.">
+    <meta name="keywords" content="agence web, développement web, site vitrine, site e-commerce, UX UI, applications mobiles, Colmar, référencement SEO">
+    <meta name="robots" content="index, follow">
+</head>
+<body>
+
+    <div id="header"></div>
+
+
+    <!-- Section hero -->
+    <section>
+        <div class="titres mt-5">
+            <h1 class="text-center fw-bold p-3">Nous contacter</h1>
+        </div>
+        <div class="container mt-5 mb-5">  
+            <div class="row g-4 align-items-stretch">
+
+                <!-- Colonne formulaire -->
+                <div class="col-lg-6 contact-form-col d-flex flex-column">
+                    <h3 class="h5 mb-4">Formulaire de contact</h3>
+
+                    <form class="flex-grow-1 d-flex flex-column">
+                        <div class="row mb-3">
+                            <div class="col-sm-6">
+                                <label for="name" class="form-label">
+                                    Nom <small class="text-danger">*</small>
+                                </label>
+                                <input name="name" id="name" type="text" class="form-control" required>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="surname" class="form-label">
+                                    Prénom <small class="text-danger">*</small>
+                                </label>
+                                <input name="surname" id="surname" type="text" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="telephone" class="form-label">
+                                Numéro de téléphone <small class="text-danger">*</small>
+                            </label>
+                            <input name="telephone" id="telephone" type="tel" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="mailmail" class="form-label">
+                                Adresse e-mail <small class="text-danger">*</small>
+                            </label>
+                            <input name="mailmail" id="mailmail" type="email" class="form-control" required>
+                        </div>
+
+                        <div class="mb-0 flex-grow-1 d-flex flex-column">
+                            <label for="message" class="form-label">Votre message</label>
+                            <textarea name="message" id="message" rows="6" class="form-control flex-grow-1"></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Ligne checkbox + bouton -->
+                <div class="col-12 contact-check-col">
+                    <div class="form-check d-flex flex-column flex-md-row align-items-md-center">
+                        <div>
+                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                            <label class="form-check-label small" for="checkDefault">
+                                J'accepte que WEBeTOI collecte et traite mes données personnelles.
+                            </label>
+                        </div>
+                        <button type="submit" class="btn form-btn ms-md-4 mt-3 mt-md-0">
+                            Envoyer
+                        </button>
+                        
+                    </div>
+                </div>
+
+                <!-- Colonne carte -->
+                <div class="col-lg-6 contact-map-col d-flex flex-column">
+                    <h3 class="h5 text-center mb-4">Adresse</h3>
+                    <div class="flex-grow-1">
+                        <img src="elements/maps.jpg" alt="Carte de Colmar" class="contact-map w-100 h-100">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <h3>Nous contacter</h3>
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="elements/Incoming Call.png" alt="Phone icon">
+                        <p class="mb-0">03 03 03 03 03</p>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="elements/Download Mail.png" alt="Email icon">
+                        <p class="mb-0">contact@webetoi.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <div>
+                        <h3>Horaires d'ouverture</h3>
+                        <p>Du lundi au vendredi:<br>9h00 - 18h00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div id="footer"></div>
+    
+    <!-- scripts de mise en page -->
+    <script src="script/layout.js"></script>
+    <script src="script/bootstrap.bundle.js"></script>
+</body>
+</html>

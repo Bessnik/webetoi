@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Webetoi - Header</title>
+</head>
+<body>
+    
+    <!--
+        HEADER / NAVBAR
+        Ici je construis la barre de navigation principale du site
+        avec le logo, le menu et les icônes des réseaux sociaux.
+    -->
+    <header class="wb-header mt-2">
+        <nav class="navbar navbar-expand-lg" aria-label="Navigation principale">
+            <!--
+                J'utilise un seul .container ici (au lieu de container + container-fluid),
+                pour garder une structure plus propre.
+            -->
+            <div class="container align-items-center">
+
+                <!-- Logo cliquable qui renvoie vers la section hero de la page d'accueil -->
+                <a class="navbar-brand d-flex align-items-center ms-5"
+                    href="#hero"
+                    aria-label="Retour à l'accueil WEBeTOI">
+                    <img src="elements/logo-webetoi.svg" alt="logo WEBeTOI" class="wb-logo">
+                </a>
+
+                <!-- Titre affiché uniquement sur mobile -->
+                <span class="navbar-text fw-bold mx-auto d-lg-none wb-mobile-title">
+                    WEBeTOI
+                </span>
+
+                <!-- Bouton burger pour ouvrir/fermer le menu sur mobile -->
+                <button class="navbar-toggler border-0 d-lg-none collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainNav"
+                        aria-controls="mainNav"
+                        aria-expanded="false"
+                        aria-label="Afficher le menu">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+
+                <!-- Menu principal -->
+                <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+                    <ul class="navbar-nav wb-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+
+                        <li class="nav-item">
+                            <!--
+                                Lien Accueil : j'utilise #hero pour scroller
+                                directement vers la section hero de cette page.
+                            -->
+                            <a id="accueil" class="nav-link active" href="index.html">
+                                Accueil
+                            </a>
+                        </li>
+
+                        <!-- Séparateur visuel (affiché uniquement sur desktop) -->
+                        <li class="nav-item nav-divider d-none d-lg-flex">|</li>
+
+                        <!-- Menu déroulant "Nos prestations" -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center gap-1"
+                                href="#"
+                                id="prestationsDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Nos prestations
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="prestationsDropdown">
+                                <!--
+                                    Ici je renvoie vers les différentes pages de prestations.
+                                    Ces liens pointent vers des pages HTML séparées.
+                                -->
+                                <li><a class="dropdown-item" href="site-vitrine.html">Site vitrine</a></li>
+                                <li><a class="dropdown-item" href="site-e-commerce.html">Site e-commerce</a></li>
+                                <li><a class="dropdown-item" href="ux-ui.html">UX / UI</a></li>
+                                <li><a class="dropdown-item" href="back-office.html">Back office</a></li>
+                                <li><a class="dropdown-item" href="applications-mobiles.html">Applications mobiles</a></li>
+                                <li><a class="dropdown-item" href="platformes-videos.html">Plateformes vidéos</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item nav-divider d-none d-lg-flex">|</li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="realisation.html">Nos réalisations</a>
+                        </li>
+
+                        <li class="nav-item nav-divider d-none d-lg-flex">|</li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Le blog</a>
+                        </li>
+
+                        <li class="nav-item nav-divider d-none d-lg-flex">|</li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contactez nous</a>
+                        </li>
+                    </ul>
+
+                    <!--
+                        Icônes des réseaux sociaux dans le menu mobile.
+                        J'utilise aria-label pour l'accessibilité et target="_blank"
+                        pour ouvrir les liens dans un nouvel onglet.
+                    -->
+                    <div class="wb-social-mobile d-lg-none text-center mt-4">
+                        <a href="https://facebook.com"
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="Visitez notre page Facebook"
+                            class="me-3">
+                            <i class="fa-brands fa-facebook fa-lg"></i>
+                        </a>
+                        <a href="https://instagram.com"
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="Visitez notre page Instagram"
+                            class="me-3">
+                            <i class="fa-brands fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="https://wa.me/0000000000"
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="Contactez-nous sur WhatsApp"
+                            class="me-3">
+                            <i class="fa-brands fa-whatsapp fa-lg"></i>
+                        </a>
+                        <a href="https://twitter.com"
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="Suivez-nous sur X (Twitter)">
+                            <i class="fa-brands fa-x-twitter fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Réseaux sociaux desktop (affichés à droite de la navbar) -->
+                <div class="wb-social d-none d-lg-flex align-items-center gap-1 justify-content-center me-5">
+                    <a href="https://facebook.com"
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="Visitez notre page Facebook"
+                        class="wb-social-link">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com"
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="Visitez notre page Instagram"
+                        class="wb-social-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/0000000000"
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="Contactez-nous sur WhatsApp"
+                        class="wb-social-link">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://twitter.com"
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="Suivez-nous sur X (Twitter)"
+                        class="wb-social-link">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+</body>
+</html>

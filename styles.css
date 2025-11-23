@@ -1,0 +1,598 @@
+/* STYLES GENERAUX */
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+/* NAVBAR */
+
+/* Liens du menu principal */
+.navbar-nav .nav-link,
+.navbar-nav .dropdown-toggle {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+/* Etat focus des liens */
+.navbar-nav .nav-link:focus {
+    color: #ffffff !important;
+}
+
+/* Effet hover sur les liens (desktop) */
+.navbar-nav .nav-link:hover {
+    color: #E50914;
+}
+
+/* Menu déroulant (liste des prestations) */
+.dropdown-menu {
+    background: #000000;
+    border: none;
+    padding: 0;
+}
+
+.dropdown-item {
+    color: #ffffff !important;
+    padding: 12px 20px;
+    border-bottom: 1px solid #222222;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background: #E50914 !important;
+    color: #ffffff !important;
+}
+
+/* Hauteur de l’en-tête */
+.wb-header,
+.navbar {
+    height: 70px;
+}
+
+/* Logo dans la navbar */
+.wb-logo {
+    width: 80px;
+    height: 50px;
+}
+
+/* Couleurs des icônes réseaux */
+.fa-facebook { color: #5686E1; }
+.fa-instagram { color: #BB271A; }
+.fa-whatsapp { color: #75F94C; }
+.fa-x-twitter { color: #ffffff; }
+
+/* Séparateurs '|' dans le menu desktop */
+.nav-divider {
+    padding: 0 .75rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Bouton burger : suppression du halo focus */
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Lignes du bouton burger */
+.burger-line {
+    display: block;
+    width: 26px;
+    height: 2px;
+    background-color: #E50914;
+    border-radius: 2px;
+    margin: 4px 0;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Animation burger en X quand le menu est ouvert */
+.navbar-toggler:not(.collapsed) .burger-line:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) .burger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) .burger-line:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Réseaux sociaux navbar desktop et mobile */
+.wb-social {
+    gap: 12px;
+}
+
+.wb-social-mobile {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+/* HERO */
+
+/* Hauteur minimale de la section hero */
+.hero {
+    min-height: 100vh;
+}
+
+/* Alignement du texte à gauche sur desktop */
+.hero-left {
+    text-align: left;
+}
+
+/* Titre principal */
+.hero-title {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+/* Mot "WEB" en rouge sur une ligne séparée */
+.hero-title .web {
+    display: block;
+    color: #E50914;
+}
+
+/* Ajustement du titre sur grand écran */
+@media (min-width: 992px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .hero-title .web {
+        margin-left: 60%;
+    }
+}
+
+/* Image de la cigogne */
+.hero-bird {
+    max-width: 260px;
+}
+
+/* Image hero desktop */
+.slogan {
+    max-width: 600px;
+}
+
+/* Image hero mobile */
+.slogan-mobile {
+    width: 100%;
+    height: auto;
+}
+
+
+/* PRESTATIONS */
+
+/* Fond texturé pour la section services */
+.services {
+    background-image: radial-gradient(circle, #444 2px, transparent 1px);
+    background-size: 30px 30px;
+    padding-bottom: 150px;
+}
+
+/* Carte de prestation */
+.box {
+    background-color: #111111;
+    border: 1px solid #2A2A2A;
+}
+
+/* Bouton dans les cartes de prestation */
+.box a.btn {
+    background-color: #BB271A;
+    color: white;
+    text-decoration: none;
+}
+/* Effet hover sur les boutons (liens) de prestation */
+.box a.btn:hover {
+    background-color: #ffffff;
+    color: #E50914;
+    border-color: #E50914;
+    text-decoration: none;
+}
+
+
+/* REALISATIONS */
+
+/* Section réalisations sur fond blanc */
+.realisation {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Fond derrière le texte du carrousel */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.55);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+/* BLOG (APERÇU SUR ACCUEIL) */
+
+.blog {
+    background-color: #000;
+}
+
+/* Carte de blog sur la page d'accueil */
+.blog-card {
+    background-color: #111111;
+    border: 1px solid #2A2A2A;
+}
+
+/* Image d’illustration dans la carte de blog */
+.blog-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Lien "En savoir plus" dans les cartes blog */
+.blog-card a {
+    color: #ff3b30;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.blog-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* CONTACT */
+
+/* Bouton d’envoi du formulaire */
+.form-btn {
+    background-color: #BB271A;
+    color: #ffffff;
+}
+
+/* Image de la carte (adresse) */
+.contact-map {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* FOOTER */
+
+/* Fond global du footer */
+.footer {
+    background-color: #111;
+    position: relative;
+}
+
+/* Logo dans le footer */
+.footer-logo {
+    height: 32px;
+}
+
+
+/* Icônes des réseaux sociaux dans le footer : blanches */
+footer .fa-facebook,
+footer .fa-instagram,
+footer .fa-linkedin,
+footer .fa-x-twitter{
+    color: #ffffff;            
+    font-size: 26px;           
+    transition: 0.2s ease;    
+    text-decoration: none;     
+}
+/* Couleurs originales au survol */
+ /* bleu Facebook */
+footer .fa-facebook:hover {
+    color: #5686E1;           
+}
+/* rouge Instagram */
+footer .fa-instagram:hover {
+    color: #BB271A;            
+}
+/* bleu LinkedIn */
+footer .fa-linkedin:hover {
+    color: #0A66C2;            
+}
+
+
+/* Liens texte dans la colonne de droite du footer */
+/* Ici j'enlève le soulignement et je garde une couleur blanche par défaut */
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* Au survol, les liens deviennent rouges (comme dans le menu) */
+.footer-links a:hover {
+    color: #e50914;
+    text-decoration: none;
+}
+
+/* Ligne rouge séparatrice en haut de la zone de liens */
+.footer-links-top {
+    border-bottom: 1px solid #e50914;
+}
+
+/* Image de la cigogne positionnée en bas à droite sur desktop */
+.footer-cigogne {
+    position: absolute;
+    margin-left: 80%;
+    margin-bottom: 0;
+    height: 100px;
+}
+
+
+/* RESPONSIVE TABLETTE + MOBILE (<= 991.98px) */
+
+@media (max-width: 991.98px) {
+
+    /* Marges du container du header sur mobile */
+    .wb-header .container {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    /* Logo au-dessus du panneau mobile */
+    .navbar-brand {
+        position: relative;
+        z-index: 9100;
+    }
+
+    /* Titre WEBeTOI centré sur mobile */
+    .wb-mobile-title {
+        color: #ffffff;
+        font-size: 1.05rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20px;
+        z-index: 9000;
+        pointer-events: none;
+    }
+
+    /* Bouton burger fixé en haut à droite */
+    .navbar-toggler {
+        position: fixed;
+        top: 16px;
+        right: 16px;
+        z-index: 10001;
+        border: none;
+    }
+
+    /* Panneau latéral pour le menu mobile (offcanvas custom) */
+    .navbar-collapse.collapsing,
+    .navbar-collapse.show {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 70%;
+        max-width: 420px;
+        background: #111111;
+        padding: 90px 2rem 2rem;
+        box-shadow: -4px 0 12px rgba(0, 0, 0, 0.8);
+        z-index: 9999;
+        overflow-y: auto;
+        transition: none;
+    }
+
+    /* Liste de liens dans le panneau mobile */
+    .navbar-collapse .navbar-nav {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .navbar-collapse .nav-link {
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #222222;
+        font-size: 1.05rem;
+        color: #ffffff !important;
+    }
+
+    .navbar-collapse .nav-item:last-child .nav-link {
+        border-bottom: none;
+    }
+
+    .navbar-collapse .nav-link:hover,
+    .navbar-collapse .nav-link:focus {
+        background: #E50914;
+        color: #ffffff !important;
+    }
+
+    /* Menu déroulant dans le panneau mobile */
+    .navbar-collapse .dropdown-menu {
+        position: static;
+        float: none;
+        background: #111111 !important;
+        border: none;
+        box-shadow: none;
+        margin-top: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .navbar-collapse .dropdown-item {
+        background: #111111;
+        color: #ffffff !important;
+        padding: 0.75rem 1.5rem;
+        border-bottom: 1px solid #222222;
+    }
+
+    .navbar-collapse .dropdown-item:hover,
+    .navbar-collapse .dropdown-item:focus {
+        background: #E50914 !important;
+        color: #ffffff !important;
+    }
+
+    /* Icônes réseaux desktop cachées en mobile */
+    .wb-social {
+        display: none !important;
+    }
+
+    /* Hero plus compact sur mobile */
+    .hero {
+        min-height: auto;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .hero-left {
+        text-align: center;
+    }
+
+    .hero-title .web {
+        margin-left: 0;
+    }
+
+    .hero-bird {
+        display: block;
+        margin: 2rem auto 0;
+        max-width: 230px;
+    }
+
+    /* Services : moins de marge en bas en mobile */
+    .services {
+        padding-bottom: 80px;
+    }
+
+    /* Footer centré en mobile + cigogne cachée */
+    .footer .col-lg-4 {
+        text-align: center !important;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-links {
+        text-align: center;
+    }
+
+    .footer-cigogne {
+        display: none !important;
+    }
+
+    .footer-brand {
+        justify-content: center;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    /* Ordre des colonnes dans la section contact sur mobile */
+    .contact-form-col { order: 1; }
+    .contact-check-col { order: 2; }
+    .contact-map-col  { order: 3; }
+}
+
+
+/* MOBILE PUR (<= 767.98px) */
+
+@media (max-width: 767.98px) {
+
+    /* Bouton du formulaire en pleine largeur */
+    .form-btn {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+
+/* DESKTOP (>= 992px) */
+/* Ici je remets l'ordre d'origine des colonnes contact sur grand écran */
+
+@media (min-width: 992px) {
+    .contact-form-col { order: 1; }
+    .contact-map-col  { order: 2; }
+    .contact-check-col { order: 3; }
+}
+
+
+/* STYLES DIVERS */
+
+/* Image de réalisations (utilisée sur d'autres pages) */
+.img-realisation {
+    width: 90%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Titres de certaines sections internes */
+.titres {
+    background-color: white;
+    color: #e50914;        
+}
+
+
+/* BLOG – PAGE DEDIEE */
+
+.blog-page {
+    background-color: #000;
+}
+
+/* Espacement entre les blocs d’articles */
+.blog-row {
+    margin-bottom: 60px; 
+}
+
+/* Grande image en haut de certains articles */
+.blog-img1 img {
+    height: 500px !important; 
+    width: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+/* Titres des articles de blog (page dédiée) */
+.blog-article h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+/* Sous-titres (h3) dans les articles */
+.blog-article h3 {
+    font-size: 1rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+/* Paragraphes des articles de blog */
+.blog-article p {
+    font-size: 0.9rem;
+    color: #dddddd; 
+    line-height: 1.5;
+    margin-bottom: 0.4rem;
+}
+
+/* Mot WEBeTOI en rouge */
+.prestations span {
+    color: #E50914;    
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+<!-- Cigogne digitale WEBeTOI (version vectorielle simplifiée) -->
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<!-- Corps / aile -->
+<path d="M120 320 L220 200 L300 260 L260 380 L160 420 Z"
+         fill="#16b4ff" stroke="#16b4ff" stroke-width="4"/>
+<!-- Cou / tête -->
+<path d="M220 200 L240 140 L260 110" stroke="#16b4ff" stroke-width="10"/>
+<circle cx="270" cy="100" r="24" fill="none" stroke="#16b4ff" stroke-width="8"/>
+<!-- Œil -->
+<circle cx="278" cy="95" r="4" fill="#16b4ff" />
+<!-- Bec -->
+<path d="M292 105 L360 130 L305 115"
+         fill="#ff4b7d" stroke="#ff4b7d" stroke-width="4"/>
+<!-- Patte arrière -->
+<path d="M190 420 L200 500" stroke="#16b4ff" stroke-width="8"/>
+<!-- Patte avant -->
+<path d="M210 420 L220 500 L250 540"
+         stroke="#ff4b7d" stroke-width="10" fill="none"/>
+<!-- Pied -->
+<path d="M250 540 L290 545" stroke="#ff4b7d" stroke-width="8"/>
+<!-- Tracés géométriques sur l’aile -->
+<path d="M120 320 L220 200 L300 260 L160 420 Z"
+         fill="none" stroke="#1fd3ff" stroke-width="2"/>
+<path d="M150 330 L240 260" stroke="#1fd3ff" stroke-width="2"/>
+<path d="M170 360 L250 300" stroke="#1fd3ff" stroke-width="2"/>
+<path d="M190 390 L260 330" stroke="#1fd3ff" stroke-width="2"/>
+</g>
+</svg>

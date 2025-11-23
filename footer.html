@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Footer - Webetoi</title>
+</head>
+<body>
+    
+
+        <!--
+        FOOTER
+        Ici je place une présentation courte, les réseaux sociaux
+        et des liens vers les pages importantes du site.
+    -->
+    <footer class="footer py-5 position-relative">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Colonne gauche : logo + description -->
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="d-flex align-items-center footer-brand mb-3">
+                        <img src="elements/logo-webetoi.svg" alt="WEBeTOI" class="footer-logo me-2">
+                        <h3 class="mb-0">WEBeTOI</h3>
+                    </div>
+                    <p class="mb-0 text-white-50 small">
+                        L'Agence WEBeTOI est une agence web basée à Colmar, spécialisée dans la création
+                        de sites Internet, applications, suivi de performance et référencement naturel (SEO).
+                    </p>
+                </div>
+
+                <!-- Colonne centrale : icônes réseaux sociaux cliquables -->
+                <div class="col-lg-4 mb-4 mb-lg-0 d-flex justify-content-center">
+                    <div>
+                        <!--
+                            Ici je rends les icônes cliquables avec <a> pour pointer vers les réseaux.
+                        -->
+                        <a href="https://facebook.com"
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="Visitez notre page Facebook"
+                            class="footer-icon me-4">
+                            <i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com"
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="Visitez notre page Instagram"
+                            class="footer-icon me-4">
+                            <i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="Visitez notre page LinkedIn"
+                            class="footer-icon me-4">
+                            <i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com"
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="Suivez-nous sur X (Twitter)"
+                            class="footer-icon">
+                            <i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Colonne droite : liens textes + cigogne -->
+                <div class="col-lg-4 text-lg-end text-start position-relative">
+                    <div class="footer-links text-white-50 small d-inline-block">
+
+                        <!-- Liens vers les prestations (comme dans le menu) -->
+                        <div class="footer-links-top mb-2 pb-2">
+                            <div class="d-flex flex-wrap justify-content-lg-centre gap-4">
+                                <a href="site-vitrine.html"><span>Site vitrine</span></a>
+                                <a href="site-e-commerce.html"><span>Site e-commerce</span></a>
+                                <a href="ux-ui.html"><span class="ms-4">UX / UI</span></a>
+                            </div>
+                            <div class="d-flex flex-wrap justify-content-lg-end mt-3 gap-4">
+                                <a href="back-office.html"><span>Back office</span></a>
+                                <a href="applications-mobiles.html"><span>Applications mobiles</span></a>
+                                <a href="platformes-videos.html"><span>Plateformes vidéos</span></a>
+                            </div>
+                        </div>
+
+                        <!--
+                            Ici je transforme les textes en liens cliquables
+                            vers les pages Mentions légales et Plan du site.
+                        -->
+                        <div class="d-flex flex-wrap justify-content-lg-end gap-4">
+                            <a href="mentions-legales.html"><span>Mentions légales</span></a>
+                            <a href="plan-du-site.html"><span>Plan du site</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Image décorative de la cigogne en bas à droite -->
+                    <div>
+                        <img src="elements/la_cigogne.png" alt="cigogne" class="footer-cigogne d-none d-lg-block">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ligne de copyright -->
+            <div class="row mt-4">
+                <div class="col text-center small">
+                    <i class="fa-regular fa-copyright me-1"></i>WEBeTOI
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script JS Bootstrap -->
+    <script src="script/bootstrap.bundle.js"></script>
+</body>
+</html>

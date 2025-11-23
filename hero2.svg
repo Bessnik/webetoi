@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 1600 900"
+    version="1.1">
+<!-- Hero WEBeTOI // Sois visible, sois toi -->
+<defs>
+<style>
+     .st0 {
+       font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+       font-size: 20px;
+       font-weight: 700;
+       fill: #0b0b0b;
+     }
+     .st1, .st2 {
+       isolation: isolate;
+       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+       font-size: 12px;
+     }
+     .st1 {
+       fill: #e10600;          /* création web • design • code */
+     }
+     .st2 {
+       fill: #e6332a;          /* WEBeTOI.fr */
+       letter-spacing: .08em;
+     }
+     .st3 {
+       fill: #000000;          /* fond noir */
+     }
+     .st4 {
+       fill: #ffffff;          /* cercle blanc */
+     }
+     .st6 {
+       fill: #e10600;          /* rouge Alsace */
+     }
+     .st5 {
+       filter: url(#soft);
+     }
+</style>
+
+<filter id="soft" x="-15%" y="-60%" width="130%" height="220%">
+<feGaussianBlur result="blur" stdDeviation="40"/>
+<feMerge>
+<feMergeNode in="blur"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+</defs>
+<!-- Fond noir plein -->
+<rect class="st3" x="0" y="0" width="1600" height="900"/>
+<g>
+
+<g>
+<circle class="st6" cx="78" cy="70.67" r="8"/>
+<circle class="st4" cx="106" cy="70.67" r="8"/>
+</g>
+<!-- WEBeTOI.fr + baseline -->
+<g>
+<text class="st2" x="134" y="104.67">WEBeTOI.fr</text>
+<text class="st1" x="134" y="132.67">création web • design • code</text>
+</g>
+<!-- Glow + slogan -->
+<g>
+
+<g class="st5">
+<rect class="st6"
+             x="140" y="382"
+             width="460" height="46"
+             rx="12" ry="12"/>
+</g>
+
+<text class="st0" x="160" y="410">
+       { WEBeTOI // Sois visible, sois toi }
+</text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1000 700">
+
+<defs>
+<style>
+     .texte-petit {
+       font-family: Arial, sans-serif;
+       font-size: 22px;
+       font-weight: 600;
+     }
+     .rouge-light { fill: #e6332a; letter-spacing: .08em; }
+     .rouge { fill: #E50914; }
+     .rouge-dot { fill: #E50914; }
+     .blanc { fill: #ffffff; }
+
+     .slogan {
+       font-family: "Roboto", sans-serif;
+       font-size: 36px;
+       font-weight: 800;
+       fill: #0b0b0b;
+     }
+</style>
+
+<filter id="glowFilter" x="-50%" y="-200%" width="300%" height="450%">
+  <feGaussianBlur stdDeviation="60" result="blur"/>
+  <feMerge><feMergeNode in="blur"/></feMerge>
+</filter>
+</defs>
+
+<g>
+
+    <circle class="rouge-dot" cx="70" cy="80" r="9"/>
+    <circle class="blanc" cx="105" cy="80" r="9"/>
+
+    <text class="texte-petit rouge-light" x="145" y="87">WEBeTOI.fr</text>
+    <text class="texte-petit rouge" x="145" y="120">création web • design • code</text>
+
+    <g filter="url(#glowFilter)">
+        <rect x="150" y="345"
+              width="680" height="80"
+              rx="18" ry="18"
+              fill="#E50914" fill-opacity="0.78"/>
+    </g>
+
+    <text class="slogan" x="185" y="395">
+        { WEBeTOI // Sois visible, sois toi }
+    </text>
+
+</g>
+</svg>
