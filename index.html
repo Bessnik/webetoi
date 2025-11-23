@@ -1,43 +1,400 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Webetoi — Coming Soon</title>
-  <style>
-    body {
-      background-color: #f5f3ef;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      text-align: center;
-      color: #2c2c2c;
-    }
-    img {
-      max-width: 450px;
-      margin-bottom: 20px;
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Feuilles de style externes (Bootstrap + Font Awesome + CSS perso) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Balises SEO de base -->
+    <title>WEBeTOI - Agence de développement web à Colmar - Alsace</title>
+    <meta name="description" content="WEBeTOI est une agence de développement web basée à Colmar : création de sites vitrine, e-commerce, UX/UI, applications mobiles et plateformes vidéos.">
+    <meta name="keywords" content="agence web, développement web, site vitrine, site e-commerce, UX UI, applications mobiles, Colmar, référencement SEO">
+    <meta name="robots" content="index, follow">
 </head>
 <body>
-  <img src="logo.png" alt="Webetoi Logo">
-  <h2>Webetoi arrive bientôt<span id="dots">.</span></h2>
+    
+    <div id="header"></div>
 
-  <script>
-    const dots = document.getElementById("dots");
-    let dotCount = 1;
+    <!--
+        SECTION HERO
+        Ici je présente le slogan principal de l'agence
+        avec une illustration et l'image de la cigogne.
+    -->
+    <section id="hero" class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
 
-    setInterval(() => {
-      dotCount = (dotCount % 3) + 1;
-      dots.textContent = ".".repeat(dotCount);
-    }, 1200);
-  </script>
+                <!-- Colonne gauche : texte + cigogne -->
+                <div class="col-lg-6 hero-left mb-4 mb-lg-0">
+                    <h1 class="hero-title fw-bold">
+                        Agence de développement
+                        <span class="web fw-bold">WEB</span>
+                    </h1>
+
+                    <img src="elements/la_cigogne.png"
+                            alt="illustration cigogne"
+                            class="img-fluid hero-bird">
+                </div>
+
+                <!-- Colonne droite : illustration hero desktop + mobile -->
+                <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end">
+                    <img src="elements/hero.svg"
+                            class="img-fluid d-none d-lg-block slogan"
+                            alt="slogan">
+
+                    <img src="elements/mobil-hero.svg"
+                            class="img-fluid d-block d-lg-none slogan-mobile"
+                            alt="slogan-mobile">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--
+        SECTION PRESTATIONS
+        Je présente les différents types de services proposés
+        sous forme de cartes.
+    -->
+    <section id="services" class="services pt-5 pb-5">
+        <div class="container">
+            <h2 class="h2 text-uppercase text-center pb-5">Nos prestations</h2>
+
+            <!-- Première rangée de cartes -->
+            <div class="row g-4 pb-5">
+                <div class="col-lg-4 d-flex">
+                    <article class="box p-4 border border-secondary rounded-3 h-100 d-flex flex-column">
+                        <img src="elements/Internet.png" alt="icône site vitrine" class="mb-3" style="width:50px;">
+                        <h3 class="fs-4 fw-semibold text-center mb-3">Site vitrine</h3>
+                        <p>
+                            Donnez vie à votre image de marque avec un site web moderne, rapide et élégant.
+                            Nous concevons des expériences qui captent l'attention et valorisent votre savoir-faire.
+                        </p>
+                        <div class="mt-auto d-flex justify-content-center">
+                            <a href="site-vitrine.html" class="btn btn-sm px-4 rounded-pill d-inline-block">
+                                En savoir plus </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 d-flex">
+                    <article class="box p-4 border border-secondary rounded-3 h-100 d-flex flex-column">
+                        <img src="elements/Online Shopping.png" alt="icône e-commerce" class="mb-3" style="width:50px;">
+                        <h3 class="fs-4 fw-semibold text-center mb-3">Site e-commerce</h3>
+                        <p>
+                            Vendez plus, plus vite. Nos boutiques en ligne allient design intuitif,
+                            sécurité et performance pour transformer chaque visiteur en client fidèle.
+                        </p>
+                        <div class="mt-auto d-flex justify-content-center">
+                            <a href="site-e-commerce.html" class="btn btn-sm px-4 rounded-pill d-inline-block">
+                                En savoir plus </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 d-flex">
+                    <article class="box p-4 border border-secondary rounded-3 h-100 d-flex flex-column">
+                        <img src="elements/Teams Breakout.png" alt="icône UX UI" class="mb-3" style="width:50px;">
+                        <h3 class="fs-4 fw-semibold text-center mb-3">UX / UI</h3>
+                        <p>
+                            Un design centré sur l'utilisateur. Nous créons des interfaces claires, esthétiques
+                            et fluides qui offrent une expérience digitale mémorable sur tous les supports.
+                        </p>
+                        <div class="mt-auto d-flex justify-content-center">
+                            <a href="ux-ui.html" class="btn btn-sm px-4 rounded-pill d-inline-block">
+                                En savoir plus </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Deuxième rangée de cartes -->
+            <div class="row g-4">
+                <div class="col-lg-4 d-flex">
+                    <article class="box p-4 border border-secondary rounded-3 h-100 d-flex flex-column">
+                        <img src="elements/Table Properties.png" alt="icône back-office" class="mb-3" style="width:50px;">
+                        <h3 class="fs-4 fw-semibold text-center mb-3">Back-office</h3>
+                        <p>
+                            Gérez votre contenu, vos produits ou vos clients avec un espace d’administration
+                            ergonomique et adapté à vos besoins. Simple, sécurisé et puissant.
+                        </p>
+                        <div class="mt-auto d-flex justify-content-center">
+                            <a href="back-office.html" class="btn btn-sm px-4 rounded-pill d-inline-block">
+                                En savoir plus </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 d-flex">
+                    <article class="box p-4 border border-secondary rounded-3 h-100 d-flex flex-column">
+                        <img src="elements/Mobile Package Tracking.png" alt="icône mobile" class="mb-3" style="width:50px;">
+                        <h3 class="fs-4 fw-semibold text-center mb-3">Applications mobiles</h3>
+                        <p>
+                            Des applications performantes et intuitives, développées sur mesure pour iOS et Android.
+                            Votre marque au creux de la main de vos utilisateurs.
+                        </p>
+                        <div class="mt-auto d-flex justify-content-center">
+                            <a href="applications-mobiles.html" class="btn btn-sm px-4 rounded-pill d-inline-block">
+                                En savoir plus </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 d-flex">
+                    <article class="box p-4 border border-secondary rounded-3 h-100 d-flex flex-column">
+                        <img src="elements/Video Playlist.png" alt="icône vidéo" class="mb-3" style="width:50px;">
+                        <h3 class="fs-4 fw-semibold text-center mb-3">Plateformes vidéos</h3>
+                        <p>
+                            Diffusez, partagez et gérez vos vidéos en toute simplicité.
+                            Nous développons des plateformes vidéo personnalisées, performantes et sécurisées.
+                        </p>
+                        <div class="mt-auto d-flex justify-content-center">
+                            <a href="platformes-videos.html" class="btn btn-sm px-4 rounded-pill d-inline-block">
+                                En savoir plus </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+        SECTION RÉALISATIONS
+        J'utilise un carrousel Bootstrap pour afficher quelques projets.
+    -->
+    <section id="realisation" class="realisation pt-5 pb-5">
+        <h2 class="text-center text-black text-uppercase">Nos réalisations</h2>
+        <div class="container">
+            <div id="carouselExample" class="carousel slide">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="elements/Realisation/Commerce-Nova.jpg" class="d-block w-100" alt="Commerce Nova">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Commerce Nova</h5>
+                            <p>Site e-commerce moderne et performant.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="elements/Realisation/Studio-Element.jpg" class="d-block w-100" alt="Studio Élément">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Studio Élément</h5>
+                            <p>Portfolio créatif 100% responsive.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="elements/Realisation/Café-Harmonie.jpg" class="d-block w-100" alt="Café Harmonie">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Café Harmonie</h5>
+                            <p>Site vitrine élégant et chaleureux.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="elements/Realisation/Ecole-Horizon.jpg" class="d-block w-100" alt="École Horizon">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>École Horizon</h5>
+                            <p>Plateforme éducative ergonomique.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="elements/Realisation/Hôtel-Azur.jpg" class="d-block w-100" alt="Hôtel Azur">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Hôtel Azur</h5>
+                            <p>Site hôtelier avec système de réservation.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="elements/Realisation/Playvid.jpg" class="d-block w-100" alt="PlayVid">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>PlayVid</h5>
+                            <p>Plateforme de vidéos sécurisée et rapide.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Boutons de navigation du carrousel -->
+                <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!--
+        SECTION BLOG (aperçu)
+        Ici je montre un extrait de quelques articles et je renvoie vers la page blog.
+    -->
+    <section id="blog" class="blog py-5">
+        <div class="container">
+            <h2 class="text-center text-uppercase mb-5">Blog</h2>
+
+            <!-- Carte 1 -->
+            <article class="row g-0 mb-4 blog-card">
+                <div class="col-lg-2 d-lg-block">
+                    <div class="blog-img">
+                        <img src="elements/seo.jpg" alt="Illustration SEO" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-10 p-4 d-flex flex-column">
+                    <p class="mb-3">
+                        Le SEO est bien plus qu'un simple outil marketing : c'est un pilier de croissance. Un site bien référencé attire un public qualifié, réduit les coûts d’acquisition et renforce la confiance dans votre marque. En 2025, le référencement naturel se transforme en véritable stratégie de communication digitale. Chez WEBeTOI, nous analysons, optimisons et accompagnons chaque projet pour que votre présence en ligne devienne une source durable de visibilité et de performance.
+                    </p>
+                    <div class="mt-auto text-end">
+                        <a href="blog.html#blog-article1">En savoir plus</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Carte 2 -->
+            <article class="row g-0 mb-4 blog-card">
+                <div class="col-lg-2 d-lg-block">
+                    <div class="blog-img">
+                        <img src="elements/trends.webp" alt="Illustration tendances" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-10 p-4 d-flex flex-column">
+                    <p class="mb-3">
+                        Le développement web moderne repose sur trois valeurs : innovation, efficacité et durabilité. Les technologies évoluent, créer des expériences utiles et performantes. Chez WEBeTOI, nous combinons savoir-faire technique et sens du design pour concevoir des sites qui répondent aux exigences du présent tout en anticipant celles du futur. L'avenir du web se construit aujourd'hui, et nous le bâtissons ligne de code après ligne de code.
+                    </p>
+                    <div class="mt-auto text-end">
+                        <a href="blog.html#blog-article2">En savoir plus</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Carte 3 -->
+            <article class="row g-0 mb-4 blog-card">
+                <div class="col-lg-2 d-lg-block">
+                    <div class="blog-img">
+                        <img src="elements/ux-ui.jpg" alt="Illustration UX UI" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-10 p-4 d-flex flex-column">
+                    <p class="mb-3">
+                        Le design épuré n'est pas une mode, mais une philosophie. Il allie esthétique, ergonomie et performance pour offrir à chaque utilisateur une expérience claire, agréable et mémorable. Chez WEBeTOI, nous croyons que le design doit raconter une histoire sans détourner l’attention de l’essentiel : le message. Un site bien pensé, harmonieux et cohérent renforce l’image de marque et stimule l'engagement. L'élégance naît de la simplicité — et c'est là que commence la vraie créativité.
+                    </p>
+                    <div class="mt-auto text-end">
+                        <a href="blog.html#blog-article3">En savoir plus</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Carte 4 -->
+            <article class="row g-0 mb-4 blog-card">
+                <div class="col-lg-2 d-lg-block">
+                    <div class="blog-img">
+                        <img src="elements/securite.jpg" alt="Illustration sécurité" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-10 p-4 d-flex flex-column">
+                    <p class="mb-3">
+                        La sécurité et la performance forment la colonne vertébrale de tout site professionnel. L'une protège votre marque, l’autre renforce votre réputation. Ensemble, elles construisent la confiance de vos visiteurs et améliorent votre positionnement SEO. Chez WEBeTOI, chaque ligne de code est pensée pour être rapide, stable et sûre. Parce qu’un site performant attire, mais un site sécurisé fidélise — et c’est cette combinaison qui fait la différence entre une simple présence en ligne et un véritable succès digital.
+                    </p>
+                    <div class="mt-auto text-end">
+                        <a href="blog.html#blog-article4">En savoir plus</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+    <!--
+        SECTION CONTACT
+        Formulaire de contact + carte de localisation simulée avec une image.
+    -->
+    <section id="contact" class="contact pt-5 pb-5">
+        <div class="container">
+            <h2 class="text-center text-uppercase mb-5">Contactez nous</h2>
+
+            <div class="row g-4 align-items-stretch">
+
+                <!-- Colonne formulaire -->
+                <div class="col-lg-6 contact-form-col d-flex flex-column">
+                    <h3 class="h5 mb-4">Formulaire de contact</h3>
+
+                    <form class="flex-grow-1 d-flex flex-column">
+                        <div class="row mb-3">
+                            <div class="col-sm-6">
+                                <label for="name" class="form-label">
+                                    Nom <small class="text-danger">*</small>
+                                </label>
+                                <input name="name" id="name" type="text" class="form-control" required>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="surname" class="form-label">
+                                    Prénom <small class="text-danger">*</small>
+                                </label>
+                                <input name="surname" id="surname" type="text" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="telephone" class="form-label">
+                                Numéro de téléphone <small class="text-danger">*</small>
+                            </label>
+                            <input name="telephone" id="telephone" type="tel" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="mailmail" class="form-label">
+                                Adresse e-mail <small class="text-danger">*</small>
+                            </label>
+                            <input name="mailmail" id="mailmail" type="email" class="form-control" required>
+                        </div>
+
+                        <div class="mb-0 flex-grow-1 d-flex flex-column">
+                            <label for="message" class="form-label">Votre message</label>
+                            <textarea name="message" id="message" rows="6" class="form-control flex-grow-1"></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Ligne checkbox + bouton d'envoi -->
+                <div class="col-12 contact-check-col">
+                    <div class="form-check d-flex flex-column flex-md-row align-items-md-center">
+                        <div>
+                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                            <label class="form-check-label small" for="checkDefault">
+                                J'accepte que WEBeTOI collecte et traite mes données personnelles.
+                            </label>
+                        </div>
+                        <button type="submit" class="btn form-btn ms-md-4 mt-3 mt-md-0">
+                            Envoyer
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Colonne carte (image statique) -->
+                <div class="col-lg-6 contact-map-col d-flex flex-column">
+                    <h3 class="h5 text-center mb-4">Adresse</h3>
+                    <div class="flex-grow-1">
+                        <img src="elements/maps.jpg" alt="Carte de Colmar" class="contact-map w-100 h-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+    
+    <!-- scripts de mise en page -->
+    <script src="script/layout.js"></script>
+    <script src="script/bootstrap.bundle.js"></script>
 </body>
 </html>
