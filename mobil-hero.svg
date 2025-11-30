@@ -18,8 +18,8 @@
      .slogan {
        font-family: "Roboto", sans-serif;
        font-size: 36px;
-       font-weight: 800;
-       fill: #0b0b0b;
+       font-weight: 600;
+      fill: #ffffff;
      }
 </style>
 

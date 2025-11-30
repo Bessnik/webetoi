@@ -18,8 +18,8 @@
      .slogan {
        font-family: "Roboto", sans-serif;
        font-size: 36px;
-       font-weight: 800;
-       fill: #0b0b0b;
+       font-weight: 600;
+       fill: #ffffff;
      }
 </style>
 
@@ -41,11 +41,12 @@
         <rect x="150" y="345"
               width="680" height="80"
               rx="18" ry="18"
-              fill="#E50914" fill-opacity="0.78"/>
+              fill="#E50914"
+              fill-opacity="0.48"/>
     </g>
 
-    <text class="slogan" x="185" y="395">
-        { WEBeTOI // Sois visible, sois toi }
+    <text class="slogan" x="490" y="395" text-anchor="middle">
+        { Sois visible, sois toi }
     </text>
 
 </g>
