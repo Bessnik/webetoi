@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Titre et meta SEO -->
-    <title>Site vitrine - Agence de développement WEB - WEBeTOI</title>
+    <title>Nos réalisations - Agence de développement WEB - WEBeTOI</title>
     <meta name="description" content="WEBeTOI est une agence de développement web à Colmar : création de sites vitrines, sites e-commerce, UX/UI, applications mobiles et plateformes vidéo performantes.">
     <meta name="keywords" content="agence web, développement web, site vitrine, site e-commerce, UX UI, applications mobiles, Colmar, WEBeTOI">
     <!-- <meta name="robots" content="index, follow"> -->
@@ -174,63 +174,68 @@
             </div>
         </nav>
     </header>
-
-    <!-- Section site vitrine -->
-    <section class="prestations">
-
-        <!-- Titre principal -->
+    
+    <!-- Section contenant la galerie des réalisations -->
+    <section>
+        <!-- Titre de la section centré avec marge en haut -->
         <div class="titres mt-5">
-            <h1 class="text-center fw-bold p-3">Site vitrine</h1>
+            <h1 class="text-center fw-bold p-3">Nos réalisations</h1> <!-- Titre principal en gras et centré -->
         </div>
-
-        <!-- Conteneur principal -->
-        <div class="container mt-5">
-            <div class="row pb-5">
-
-                <!-- Colonne image -->
-                <div class="col-lg-6">
-                    <img src="elements/service-site-vitrine.jpg" alt="Site vitrine WEBeTOI" class="img-fluid">
+        <!-- Conteneur principal avec marge en bas -->
+        <div class="container mb-5">
+            <!-- Première rangée avec marge en haut -->
+            <div class="row mt-5">
+                <!-- Première colonne sur grand écran -->
+                <div class="col-lg-4">
+                    <!-- Image de la réalisation Commerce-Nova avec classe spécifique pour modal -->
+                    <img src="elements/Realisation/Commerce-Nova.webp" alt="Commerce-Nova" class="img-realisation">
+                    <!-- Légende sous l'image, centrée avec marge au-dessus -->
+                    <p class="text-center mt-2">Commerce-Nova</p>
                 </div>
-
-                <!-- Colonne texte : présentation, atouts et fonctionnalités -->
-                <div class="col-lg-6 mt-4">
-
-                    <!-- Introduction -->
-                    <h2>Votre site web est bien plus qu'une simple vitrine</h2>
-                    <p class="pt-2">C'est la première impression que vous laissez à vos visiteurs.</p>
-                    <p>
-                        Chez <span>WEBeTOI</span>, nous concevons des sites qui allient esthétique, performance et clarté, 
-                        des expériences digitales qui racontent votre histoire avec impact.
-                    </p>
-
-                    <!-- Liste des atouts -->
-                    <h3>Nos atouts</h3>
-                    <ul>
-                        <li>Design moderne, minimaliste et sur mesure</li>
-                        <li>Structure optimisée pour le référencement (SEO)</li>
-                        <li>Navigation fluide sur tous les appareils</li>
-                        <li>Chargement rapide et code propre</li>
-                    </ul>
-
-                    <!-- Liste des fonctionnalités -->
-                    <h3>Fonctionnalités</h3>
-                    <ul>
-                        <li>Pages administrables via un back-office intuitif</li>
-                        <li>Formulaires de contact et intégration réseaux sociaux</li>
-                        <li>Sécurisation HTTPS et hébergement performant</li>
-                        <li>Optimisation mobile (responsive design)</li>
-                    </ul>
-
+                <!-- Deuxième colonne -->
+                <div class="col-lg-4">
+                    <img src="elements/Realisation/Studio-Element.jpg" alt="Studio-Element" class="img-realisation">
+                    <p class="text-center mt-2">Studio-Element</p>
                 </div>
-            </div>
+                <!-- Troisième colonne -->
+                <div class="col-lg-4">
+                    <img src="elements/Realisation/Café-Harmonie.jpg" alt="Café-Harmonie" class="img-realisation">
+                    <p class="text-center mt-2">Café-Harmonie</p>
+                </div>
+            </div> 
+
+            <!-- Deuxième rangée d'images -->
+            <div class="row mt-5">
+                <div class="col-lg-4">
+                    <img src="elements/Realisation/Service-Mobile-Express.jpg" alt="Service-Mobile-Express" class="img-realisation">
+                    <p class="text-center mt-2">Service Mobile Express</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="elements/Realisation/Voyages-Lumiére.jpg" alt="Voyages-Lumiére" class="img-realisation">
+                    <p class="text-center mt-2">Voyages-Lumiére</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="elements/Realisation/Playvid.jpg" alt="Playvid" class="img-realisation">
+                    <p class="text-center mt-2">Playvid</p>
+                </div>
+            </div> 
+
+            <!-- Troisième rangée d'images -->
+            <div class="row mt-5">
+                <div class="col-lg-4">
+                    <img src="elements/Realisation/Hôtel-Azur.jpg" alt="Hôtel-Azur" class="img-realisation">
+                    <p class="text-center mt-2">Hôtel-Azur</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="elements/Realisation/Immo-select.webp" alt="Immo-select" class="img-realisation">
+                    <p class="text-center mt-2">Immo Select</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="elements/Realisation/Ecole-Horizon.jpg" alt="Ecole-Horizon" class="img-realisation">
+                    <p class="text-center mt-2">Ecole-Horizon</p>
+                </div>
+            </div> 
         </div>
-
-        <!-- Texte de conclusion -->
-        <p class="m-5 text-center">
-            Un site vitrine efficace attire, informe et inspire confiance. 
-            Chez <span>WEBeTOI</span>, nous transformons votre présence digitale en un outil de communication puissant, élégant et durable.
-        </p>
-
     </section>
 
 
@@ -329,7 +334,14 @@
         </div>
     </footer>
     
-    <!-- scripts de mise en page -->
+    <!-- Modal image -->
+    <div id="img-modal" class="img-modal">
+        <img id="img-modal-img" >
+    </div>
+
+    
+    <!-- scripts de mise en page -->    
     <script src="script/bootstrap.bundle.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>

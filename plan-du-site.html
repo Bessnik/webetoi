@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Titre et meta SEO -->
-    <title>Site vitrine - Agence de développement WEB - WEBeTOI</title>
+    <title>Plan du site - Agence de développement WEB - WEBeTOI</title>
     <meta name="description" content="WEBeTOI est une agence de développement web à Colmar : création de sites vitrines, sites e-commerce, UX/UI, applications mobiles et plateformes vidéo performantes.">
     <meta name="keywords" content="agence web, développement web, site vitrine, site e-commerce, UX UI, applications mobiles, Colmar, WEBeTOI">
     <!-- <meta name="robots" content="index, follow"> -->
@@ -13,14 +13,14 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="elements/favicon.ico">
 
-    <!-- link pour favicon -->
+    <!-- link pour font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer">
     
-    <!-- links bootsrap et css -->
+    <!-- links bootstrap et css -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+
 
         <!--
         HEADER / NAVBAR
@@ -175,67 +175,55 @@
         </nav>
     </header>
 
-    <!-- Section site vitrine -->
-    <section class="prestations">
-
-        <!-- Titre principal -->
+    <!-- Section Plan du site  -->
+    <section>
+        <!-- Titre principal de la section -->
         <div class="titres mt-5">
-            <h1 class="text-center fw-bold p-3">Site vitrine</h1>
+            <h1 class="text-center fw-bold p-3">Plan du site</h1>
         </div>
 
-        <!-- Conteneur principal -->
-        <div class="container mt-5">
-            <div class="row pb-5">
-
-                <!-- Colonne image -->
-                <div class="col-lg-6">
-                    <img src="elements/service-site-vitrine.jpg" alt="Site vitrine WEBeTOI" class="img-fluid">
-                </div>
-
-                <!-- Colonne texte : présentation, atouts et fonctionnalités -->
-                <div class="col-lg-6 mt-4">
-
-                    <!-- Introduction -->
-                    <h2>Votre site web est bien plus qu'une simple vitrine</h2>
-                    <p class="pt-2">C'est la première impression que vous laissez à vos visiteurs.</p>
-                    <p>
-                        Chez <span>WEBeTOI</span>, nous concevons des sites qui allient esthétique, performance et clarté, 
-                        des expériences digitales qui racontent votre histoire avec impact.
-                    </p>
-
-                    <!-- Liste des atouts -->
-                    <h3>Nos atouts</h3>
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <div class="col-lg-12">
+                    
+                    <!-- Liste des pages du site -->
+                    <h2>Pages</h2>
                     <ul>
-                        <li>Design moderne, minimaliste et sur mesure</li>
-                        <li>Structure optimisée pour le référencement (SEO)</li>
-                        <li>Navigation fluide sur tous les appareils</li>
-                        <li>Chargement rapide et code propre</li>
+                        <li>Accueil</li>
+                        <li>Nos prestations
+                            <!-- Sous-menu pour les différentes prestations -->
+                            <ul>
+                                <li>Site vitrine</li>
+                                <li>Site e-commerce</li>
+                                <li>UX / UI</li>
+                                <li>Back-office</li>
+                                <li>Applications mobiles</li>
+                                <li>Plateformes vidéos</li>
+                            </ul>
+                        </li>
+                        <li>Nos réalisations</li>
+                        <li>Le blog</li>
+                        <li>Contactez-nous</li>
                     </ul>
 
-                    <!-- Liste des fonctionnalités -->
-                    <h3>Fonctionnalités</h3>
+                    <!-- Section dédiée aux articles de blog -->
+                    <h2 class="mt-5">Blog</h2>
                     <ul>
-                        <li>Pages administrables via un back-office intuitif</li>
-                        <li>Formulaires de contact et intégration réseaux sociaux</li>
-                        <li>Sécurisation HTTPS et hébergement performant</li>
-                        <li>Optimisation mobile (responsive design)</li>
+                        <li>Pourquoi le SEO est essentiel pour votre site web en 2025</li>
+                        <li>Les tendances du développement web moderne</li>
+                        <li>Comment un design épuré améliore l'expérience utilisateur (UX)</li>
+                        <li>Sécurité et performance : les piliers d'un site web professionnel</li>
                     </ul>
 
                 </div>
             </div>
         </div>
-
-        <!-- Texte de conclusion -->
-        <p class="m-5 text-center">
-            Un site vitrine efficace attire, informe et inspire confiance. 
-            Chez <span>WEBeTOI</span>, nous transformons votre présence digitale en un outil de communication puissant, élégant et durable.
-        </p>
-
     </section>
 
 
 
-            <!--
+
+        <!--
         FOOTER
         Ici je place une présentation courte, les réseaux sociaux
         et des liens vers les pages importantes du site.
@@ -328,8 +316,8 @@
             </div>
         </div>
     </footer>
-    
-    <!-- scripts de mise en page -->
+
+    <!-- Script Bootstrap -->
     <script src="script/bootstrap.bundle.js"></script>
 </body>
 </html>
