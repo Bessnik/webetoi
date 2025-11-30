@@ -1,14 +1,8 @@
 /* STYLES GENERAUX */
 
-body {
-    background: #000;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-}
-
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Regular.woff2') format('woff2');
+    src: url('../fonts/roboto/Roboto-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -16,7 +10,7 @@ body {
 
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Medium.woff2') format('woff2');
+    src: url('../fonts/roboto/Roboto-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -24,13 +18,17 @@ body {
 
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Bold.woff2') format('woff2');
+    src: url('../fonts/roboto/Roboto-Bold.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 
-
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
 
 
 /* NAVBAR */
@@ -79,7 +77,7 @@ body {
 
 /* Logo dans la navbar */
 .wb-logo {
-    width: 80px;
+    width: 70px;
     height: 50px;
 }
 
@@ -95,7 +93,7 @@ body {
     color: rgba(255, 255, 255, 0.5);
 }
 
-/* Bouton burger : suppression du halo focus */
+/* Bouton burger  */
 .navbar-toggler:focus {
     box-shadow: none;
 }
@@ -125,9 +123,6 @@ body {
 }
 
 /* Réseaux sociaux navbar desktop et mobile */
-.wb-social {
-    gap: 12px;
-}
 
 .wb-social-mobile {
     display: flex;
@@ -143,19 +138,7 @@ body {
     min-height: 100vh;
 }
 
-/* Alignement du texte à gauche sur desktop */
-.hero-left {
-    text-align: left;
-}
-
-/* Titre principal */
-.hero-title {
-    font-size: 3rem;
-    line-height: 1.1;
-    margin-bottom: 2rem;
-}
-
-/* Mot "WEB" en rouge sur une ligne séparée */
+/* Mot WEB en rouge  */
 .hero-title .web {
     display: block;
     color: #E50914;
@@ -170,6 +153,7 @@ body {
     .hero-title .web {
         margin-left: 60%;
     }
+    
 }
 
 /* Image de la cigogne */
@@ -177,12 +161,12 @@ body {
     max-width: 260px;
 }
 
-/* Image hero desktop */
+/* Image de slogan sur desktop */
 .slogan {
     max-width: 600px;
 }
 
-/* Image hero mobile */
+/* Image de slogan mobile */
 .slogan-mobile {
     width: 100%;
     height: auto;
@@ -210,12 +194,16 @@ body {
     color: white;
     text-decoration: none;
 }
-/* Effet hover sur les boutons (liens) de prestation */
+/* Effet hover sur les  liens (boutons) de prestation */
 .box a.btn:hover {
     background-color: #ffffff;
     color: #E50914;
     border-color: #E50914;
     text-decoration: none;
+}
+
+.logo-prestations{
+    width: 50px;
 }
 
 
@@ -227,7 +215,7 @@ body {
     color: #000000;
 }
 
-/* Fond derrière le texte du carrousel */
+/* Fond pour le texte dans photos du carrousel */
 .carousel-caption {
     background: rgba(0, 0, 0, 0.55);
     padding: 15px;
@@ -235,11 +223,7 @@ body {
 }
 
 
-/* BLOG (APERÇU SUR ACCUEIL) */
-
-.blog {
-    background-color: #000;
-}
+/* BLOG - apperçu sur Accueil */
 
 /* Carte de blog sur la page d'accueil */
 .blog-card {
@@ -247,11 +231,15 @@ body {
     border: 1px solid #2A2A2A;
 }
 
+
+.blog-img{
+    line-height: 0;
+}
+
 /* Image d’illustration dans la carte de blog */
 .blog-img img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
     display: block;
 }
 
@@ -267,19 +255,27 @@ body {
 }
 
 
-/* CONTACT */
+/* CONTACT - apperçu sur Accueil */
 
 /* Bouton d’envoi du formulaire */
 .form-btn {
     background-color: #BB271A;
     color: #ffffff;
+    border: none; 
+    width: auto;              
+    align-self: flex-end;  
+}
+
+/* Empêche le redimensionnement du textarea */
+textarea {
+    resize: none;
 }
 
 /* Image de la carte (adresse) */
 .contact-map {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+
 }
 
 
@@ -287,13 +283,13 @@ body {
 
 /* Fond global du footer */
 .footer {
-    background-color: #111;
+    background-color: #111111;
     position: relative;
 }
 
 /* Logo dans le footer */
 .footer-logo {
-    height: 32px;
+    height: 2rem;
 }
 
 
@@ -320,17 +316,18 @@ footer .fa-instagram:hover {
 footer .fa-linkedin:hover {
     color: #0A66C2;            
 }
+/*Pour Twitter, je n’ai pas besoin de changer la couleur car elle est blanche à l’origine.*/  
 
 
-/* Liens texte dans la colonne de droite du footer */
-/* Ici j'enlève le soulignement et je garde une couleur blanche par défaut */
+/* Les liens des services, des mentions légales et du plan du site dans la colonne de droite du footer. */
+/* Ici j'enlève le soulignement et je garde une couleur blanche  */
 .footer-links a {
     color: #ffffff;
     text-decoration: none;
     font-size: 0.9rem;
 }
 
-/* Au survol, les liens deviennent rouges (comme dans le menu) */
+/* Au survol, les liens deviennent rouges  */
 .footer-links a:hover {
     color: #e50914;
     text-decoration: none;
@@ -354,19 +351,19 @@ footer .fa-linkedin:hover {
 
 @media (max-width: 991.98px) {
 
-    /* Marges du container du header sur mobile */
+    /* Marges du container du header  */
     .wb-header .container {
         padding-right: 1rem;
         padding-left: 1rem;
     }
 
-    /* Logo au-dessus du panneau mobile */
+    /* Logo au-dessus du panneau */
     .navbar-brand {
         position: relative;
         z-index: 9100;
     }
 
-    /* Titre WEBeTOI centré sur mobile */
+    /* Titre WEBeTOI centré  */
     .wb-mobile-title {
         color: #ffffff;
         font-size: 1.05rem;
@@ -374,11 +371,21 @@ footer .fa-linkedin:hover {
         left: 50%;
         transform: translateX(-50%);
         top: 20px;
-        z-index: 9000;
+        z-index: 1;
         pointer-events: none;
     }
+    
+    /* Logo plus pétit et centre à gauche*/ 
+    .wb-logo {
+    width: 50px;
+    height: 30px;
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    }
 
-    /* Bouton burger fixé en haut à droite */
+    /* Bouton burger fixé en haut à droite 
+    z-index élevé pour que le bouton burger soit au-dessus de tous les éléments */
     .navbar-toggler {
         position: fixed;
         top: 16px;
@@ -387,7 +394,7 @@ footer .fa-linkedin:hover {
         border: none;
     }
 
-    /* Panneau latéral pour le menu mobile (offcanvas custom) */
+    /* Panneau latéral pour le menu mobile */
     .navbar-collapse.collapsing,
     .navbar-collapse.show {
         position: fixed;
@@ -405,34 +412,25 @@ footer .fa-linkedin:hover {
     }
 
     /* Liste de liens dans le panneau mobile */
-    .navbar-collapse .navbar-nav {
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
     .navbar-collapse .nav-link {
         padding: 0.75rem 0;
         border-bottom: 1px solid #222222;
         font-size: 1.05rem;
-        color: #ffffff !important;
+        color: #ffffff;
     }
 
-    .navbar-collapse .nav-item:last-child .nav-link {
-        border-bottom: none;
-    }
-
+    /* Changer la couleur au survol dans le menu Prestations*/
     .navbar-collapse .nav-link:hover,
     .navbar-collapse .nav-link:focus {
         background: #E50914;
-        color: #ffffff !important;
+        color: #ffffff;
     }
 
     /* Menu déroulant dans le panneau mobile */
     .navbar-collapse .dropdown-menu {
         position: static;
         float: none;
-        background: #111111 !important;
+        background: #111111;
         border: none;
         box-shadow: none;
         margin-top: 0;
@@ -440,37 +438,10 @@ footer .fa-linkedin:hover {
         width: 100%;
     }
 
-    .navbar-collapse .dropdown-item {
-        background: #111111;
-        color: #ffffff !important;
-        padding: 0.75rem 1.5rem;
-        border-bottom: 1px solid #222222;
-    }
-
-    .navbar-collapse .dropdown-item:hover,
-    .navbar-collapse .dropdown-item:focus {
-        background: #E50914 !important;
-        color: #ffffff !important;
-    }
 
     /* Icônes réseaux desktop cachées en mobile */
     .wb-social {
         display: none !important;
-    }
-
-    /* Hero plus compact sur mobile */
-    .hero {
-        min-height: auto;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
-
-    .hero-left {
-        text-align: center;
-    }
-
-    .hero-title .web {
-        margin-left: 0;
     }
 
     .hero-bird {
@@ -484,34 +455,26 @@ footer .fa-linkedin:hover {
         padding-bottom: 80px;
     }
 
-    /* Footer centré en mobile + cigogne cachée */
+    /*  Les liens dans le footer, centrés sur mobile  */
     .footer .col-lg-4 {
         text-align: center !important;
-        margin-bottom: 1.5rem;
+        
     }
 
-    .footer-links {
-        text-align: center;
-    }
-
+    /*La cigogne cachée*/
     .footer-cigogne {
         display: none !important;
     }
-
+    
+    /*  Le logo est centré, et le texte se trouve sous le logo*/
     .footer-brand {
         justify-content: center;
-        flex-direction: column;
-        gap: .5rem;
+        flex-direction: column;        
     }
-
-    /* Ordre des colonnes dans la section contact sur mobile */
-    .contact-form-col { order: 1; }
-    .contact-check-col { order: 2; }
-    .contact-map-col  { order: 3; }
 }
 
 
-/* MOBILE PUR (<= 767.98px) */
+/* MOBILE  (<= 767.98px) */
 
 @media (max-width: 767.98px) {
 
@@ -525,52 +488,89 @@ footer .fa-linkedin:hover {
 
 
 /* DESKTOP (>= 992px) */
-/* Ici je remets l'ordre d'origine des colonnes contact sur grand écran */
+/* Ici je gère l’ordre des colonnes de la section Contact et j’adapte les images des cartes du blog.*/
 
 @media (min-width: 992px) {
+    /* Ordre des colonnes dans la section Contact (version desktop) */
     .contact-form-col { order: 1; }
     .contact-map-col  { order: 2; }
     .contact-check-col { order: 3; }
+
+    /* La colonne contenant l’image du blog doit occuper toute la hauteur de la carte */
+    .blog-card .blog-img {
+        height: 100%;
+    }
+
+    /* L’image remplit entièrement la hauteur de sa colonne.
+    object-fit: cover permet de recadrer proprement l’image sans la déformer. */
+    .blog-card .blog-img img {
+        width: 100%;
+        height: 100%;      
+        object-fit: cover;
+        display: block;
+    }
 }
 
 
-/* STYLES DIVERS */
+/* REALISATIONS */
 
 /* Image de réalisations (utilisée sur d'autres pages) */
 .img-realisation {
-    width: 90%;
+    width: 400px;
     height: 400px;
     object-fit: cover;
     display: block;
+    /*transition: transform .25sec ease; */
+    cursor: pointer;    
 }
 
-/* Titres de certaines sections internes */
+/* J'ai enlevé le hover, car j'ai fait le modal pour les images en JavaScript.
+.img-realisation:hover{
+    transform: scale(1.05);
+    
+} */
+
+.img-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(241, 241, 241, 0.88);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.img-modal img {
+    max-width: 99%;
+    max-height: 99%;
+    width: auto;
+    height: auto;
+    
+}
+
+
+/* Titres de soupages */
 .titres {
     background-color: white;
     color: #e50914;        
 }
 
 
-/* BLOG – PAGE DEDIEE */
-
-.blog-page {
-    background-color: #000;
-}
+/* BLOG  */
 
 /* Espacement entre les blocs d’articles */
 .blog-row {
     margin-bottom: 60px; 
 }
 
-/* Grande image en haut de certains articles */
-.blog-img1 img {
-    height: 500px !important; 
+/* Grande image en articles de blog */
+.blog-imgp img {
     width: 100%;
-    object-fit: cover; 
+    height: auto;
     display: block;
 }
 
-/* Titres des articles de blog (page dédiée) */
+
+/* Titres des articles de blog  */
 .blog-article h2 {
     font-size: 1.4rem;
     margin-bottom: 1rem;
@@ -586,7 +586,7 @@ footer .fa-linkedin:hover {
 
 /* Paragraphes des articles de blog */
 .blog-article p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #dddddd; 
     line-height: 1.5;
     margin-bottom: 0.4rem;
@@ -596,4 +596,3 @@ footer .fa-linkedin:hover {
 .prestations span {
     color: #E50914;    
 }
-
